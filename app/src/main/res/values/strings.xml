@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Currency</string>
+
+    <string name="formatted_currency_name">%1$s (%2$s)</string>
+    <string name="formatted_currency_value">%1$s %2$s</string>
+    <string name="date">Date:</string>
+    <string name="number_one">1</string>
+
+</resources>
