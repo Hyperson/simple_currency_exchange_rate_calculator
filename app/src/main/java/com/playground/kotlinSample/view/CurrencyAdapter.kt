@@ -9,8 +9,10 @@ import com.mynameismidori.currencypicker.ExtendedCurrency
 import com.playground.kotlinSample.R
 import com.playground.kotlinSample.model.CurrencyItem
 import kotlinx.android.synthetic.main.currency_list_item.view.*
-import java.util.concurrent.ConcurrentHashMap
 
+/**
+ * Adapter for currency
+ */
 class CurrencyAdapter(
     private val context: Context,
     private var currencyItem: CurrencyItem,
@@ -53,16 +55,14 @@ class CurrencyAdapter(
         viewHolder.itemView.setOnClickListener { listener(extendedCurrency) }
     }
 
+    /**
+     * Update the currency quantity
+     */
     fun updateCurrencyAmount(currencyQuantity: Double) {
         cQuantity = currencyQuantity
         notifyDataSetChanged()
     }
 
-    inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val country = view.country
-        val currency = view.currency
-        val value = view.value
-    }
 
     //TODO Remove this and implement a proper solution
     private fun getExtendedCurrency(currencyIsoCode: String): ExtendedCurrency {
@@ -73,5 +73,14 @@ class CurrencyAdapter(
             }
         }
         return ExtendedCurrency()
+    }
+
+    /**
+     *View holder for our adapter
+     */
+    inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        val country = view.country
+        val currency = view.currency
+        val value = view.value
     }
 }

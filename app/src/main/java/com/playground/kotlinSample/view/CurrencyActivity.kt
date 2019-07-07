@@ -52,10 +52,16 @@ class MainActivity : AppCompatActivity(), CurrencyView {
         })
     }
 
+    /**
+     * Display progress
+     */
     override fun showProgress() {
         progressBar.visibility = View.VISIBLE
     }
 
+    /**
+     * Hide progress
+     */
     override fun hideProgress() {
         progressBar.visibility = View.GONE
     }
