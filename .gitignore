@@ -11,3 +11,15 @@
 /build
 /captures
 .externalNativeBuild
+
+app/build/generated/source/buildConfig/debug/com/playground/kotlinSample/BuildConfig.java
+
+.idea/vcs.xml
+
+.idea/runConfigurations.xml
+
+.idea/misc.xml
+
+.idea/gradle.xml
+
+.idea/encodings.xml
