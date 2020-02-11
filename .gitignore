@@ -23,3 +23,7 @@ app/build/generated/source/buildConfig/debug/com/playground/kotlinSample/BuildCo
 .idea/gradle.xml
 
 .idea/encodings.xml
+
+.idea/codeStyles/codeStyleConfig.xml
+
+.idea/codeStyles/Project.xml
